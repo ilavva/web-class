@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    --font-color:rgb(50, 50, 41);
+    --bg-body-color:rgb(245,239,214);
+
+    --bg-nav-color:rgb(98, 98, 90);
+    --background-color-2:rgb(128, 128, 128);
+    
+    --menu-border-color:#f97204;
+    --header-font-color:white;
+   
+    --menu-bg-color:rgb(246, 235, 215);
+    --menu-font-color: #f97204;
+    
+    --menu-bg-color-active: rgb(241, 223, 190);
+    --menu-font-color-active: rgb(255, 4, 4);
+    --menu-font-color-visited: rgb(2, 157, 5);
+    /* rgb(255,176,93); */
+
+    /* --background-menu: darkorange; */
+    
+
+}
+body {
+    background-color: var(--bg-body-color);
+    color:var(--font-color);
+}
+
+
+header {
+    background-color: var(--bg-nav-color);
+    border-bottom: 1rem solid var(--menu-border-color);
+    height: 9rem;
+}
+@media  screen and (max-width:1310px) {
+    header {
+        height: 12.5rem;
+    }
+}
+@media  screen and (max-width:750px) {
+    header {
+        height: 16rem;
+    }
+}
+@media  screen and (max-width:550px) {
+    header {
+        height: 19.5rem;
+    }
+}
+header h1 {
+    padding: 1rem;
+    color: var(--header-font-color);
+    text-decoration: none;    
+}
+header a, header a:visited  {
+    color: var(--header-font-color);
+    text-decoration: none;    
+}
+header a:hover {
+    color: var(--header-font-color);
+    text-decoration:underline;    
+}
+#navbar {
+    display:block;
+   
+}
+.sites-header-nav-container {
+    height: max-content;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+} 
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  font-family: monospace;
+  margin-right: 6rem;
+ 
+}
+.sites-header-nav a:hover {
+    color: var(--menu-font-color-active);
+    text-decoration:underline;  
+    
+}
+.sites-header-nav a:visited {
+    color: var(--menu-font-color-visited);
+    text-decoration:none;  
+}
+.sites-header-nav ul {
+  background: var(--menu-bg-color);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sites-header-nav>li {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+li {
+  color: var(--menu-font-color);
+  background: var(--menu-bg-color);
+  display: block;
+  float: left;
+  padding: 0.7rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+
+}
+  
+li a {
+  color:  var(--menu-font-color);
+  font-weight: 500;
+}
+
+li:hover,
+li:focus-within {
+  background: var(--menu-bg-color-active);
+  cursor: pointer;
+}
+
+li:focus-within a {
+  outline: none;
+}
+
+ul li ul {
+  color: var(--menu-font-color);
+  background: var(--menu-bg-color);
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  border-radius: 5px;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  text-wrap: nowrap;
+  color: var(--menu-font-color-active);
+  z-index:2;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+ul li ul li {
+  padding: 0.7rem;
+  clear: both;
+  width: 100%;
+}
+
+
+
