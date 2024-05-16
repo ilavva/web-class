@@ -1,101 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing:border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 
-    --font-color:rgb(50, 50, 41);
-    --bg-body-color:rgb(245,239,214);
+  --font-color: rgb(50, 50, 41);
+  --bg-body-color: rgb(245, 239, 214);
 
-    --bg-nav-color:rgb(98, 98, 90);
-      
-    --menu-border-color:#f97204;
-    --header-font-color:white;
-   
-    --menu-bg-color:rgb(246, 235, 215);
-    --menu-font-color: #f97204;
-    
-    --menu-bg-color-active: rgb(241, 223, 190);
-    --menu-font-color-active: rgb(255, 4, 4);
-    --menu-font-color-visited: rgb(2, 157, 5);
-    /* rgb(255,176,93); */
+  --bg-nav-color: rgb(98, 98, 90);
 
-    /* --background-menu: darkorange; */
-    
+  --menu-border-color: #f97204;
+  --header-font-color: white;
 
+  --menu-bg-color: rgb(246, 235, 215);
+  --menu-font-color: #f97204;
+
+  --menu-bg-color-active: rgb(241, 223, 190);
+  --menu-font-color-active: rgb(255, 4, 4);
+  --menu-font-color-visited: rgb(2, 157, 5);
+
+  --h1-header-color: rgb(153, 0, 0);
+
+  --code-background-color: white;
+  --code-border-color: rgb(98, 98, 90);
+
+  --hr-color: white;
 }
 body {
-    background-color: var(--bg-body-color);
-    color:var(--font-color);
+  background-color: var(--bg-body-color);
+  color: var(--font-color);
 }
-
 
 header {
-    background-color: var(--bg-nav-color);
-    border-bottom: 1rem solid var(--menu-border-color);
-    height: 9rem;
+  background-color: var(--bg-nav-color);
+  border-bottom: 1rem solid var(--menu-border-color);
+  height: 9rem;
 }
-@media  screen and (max-width:1310px) {
-    header {
-        height: 12.5rem;
-    }
+@media screen and (max-width: 1310px) {
+  header {
+    height: 12.5rem;
+  }
 }
-@media  screen and (max-width:750px) {
-    header {
-        height: 16rem;
-    }
+@media screen and (max-width: 750px) {
+  header {
+    height: 16rem;
+  }
 }
-@media  screen and (max-width:550px) {
-    header {
-        height: 19.5rem;
-    }
+@media screen and (max-width: 550px) {
+  header {
+    height: 19.5rem;
+  }
 }
 header h1 {
-    padding: 1rem;
-    color: var(--header-font-color);
-    text-decoration: none;    
+  padding: 1rem;
+  color: var(--header-font-color);
+  text-decoration: none;
 }
-header a, header a:visited  {
-    color: var(--header-font-color);
-    text-decoration: none;    
+header a,
+header a:visited {
+  color: var(--header-font-color);
+  text-decoration: none;
 }
 header a:hover {
-    color: var(--header-font-color);
-    text-decoration:underline;    
+  color: var(--header-font-color);
+  text-decoration: underline;
 }
 a {
   text-decoration: none;
 }
 
 #navbar {
-    display:block;
-   
+  display: block;
 }
 nav.sites-header-nav-container {
-    height: max-content;
-    padding-left: 1rem;
-    padding-right: 1rem;
-   
-} 
+  height: max-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 nav {
   font-family: monospace;
   margin-right: 6rem;
- 
 }
 nav .sites-header-nav a:hover {
-    color: var(--menu-font-color-active);
-    text-decoration:underline;  
-    
+  color: var(--menu-font-color-active);
+  text-decoration: underline;
 }
 nav .sites-header-nav a:visited {
-    color: var(--menu-font-color-visited);
-    text-decoration:none;  
+  color: var(--menu-font-color-visited);
+  text-decoration: none;
 }
 nav .sites-header-nav ul {
   background: var(--menu-bg-color);
@@ -103,9 +101,9 @@ nav .sites-header-nav ul {
   margin: 0;
   padding: 0;
 }
-nav .sites-header-nav>li {
-    margin: 0.5rem;
-    border-radius: 0.5rem;
+nav .sites-header-nav > li {
+  margin: 0.5rem;
+  border-radius: 0.5rem;
 }
 nav li {
   color: var(--menu-font-color);
@@ -116,11 +114,10 @@ nav li {
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
-
 }
-  
+
 nav li a {
-  color:  var(--menu-font-color);
+  color: var(--menu-font-color);
   font-weight: 500;
 }
 
@@ -157,7 +154,7 @@ nav ul li ul:focus {
   display: block;
   text-wrap: nowrap;
   color: var(--menu-font-color-active);
-  z-index:2;
+  z-index: 2;
   margin-top: 0.5rem;
   border-radius: 5px;
 }
@@ -168,5 +165,52 @@ nav ul li ul li {
   width: 100%;
 }
 
+main {
+  padding: 20px;
+}
 
+h3 {
+  font-weight: 600;
+  font-size: larger;
+}
+h1 {
+  font-weight: 600;
+  font-size: xx-large;
+  text-align: center;
+  color: var(--h1-header-color);
+  text-decoration: underline;
+}
+section {
+  line-height: 120%;
+}
+section p {
+  margin-top: 1rem;
+}
+section ul {
+  list-style-type: none;
+  padding-inline-start: 2rem;
+}
 
+section code {
+  background-color: var(--code-background-color);
+  padding: 20px;
+  margin: 20px;
+  display: block;
+  text-align: left;
+  direction: ltr;
+  border: 1px solid var(--code-border-color);
+}
+section code * {
+  font-weight: bolder;
+}
+.heb * {
+  direction: rtl;
+}
+section .filename {
+  font-weight: bold;
+  color: var(--h1-header-color);
+}
+main hr {
+  margin-top: 1rem;
+  border: 1px var(--hr-color) solid;
+}

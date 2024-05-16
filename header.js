@@ -7,6 +7,14 @@ function load_header() {
     load_html('./nav_links.html', (html) => {
         document.querySelector("#navbar").innerHTML = html;
     });
+    let filename = window.location.pathname;
+    filename = filename.replace('.html', '');
+    filename = filename.replace('-', ' ');
+    filename = filename.replace('/', ' ').trim();
+    if (filename === "index") {
+        filename = "HTML 5";
+    }
+    document.querySelector("#this-page-url").innerHTML = filename;
 }
 
 load_header();

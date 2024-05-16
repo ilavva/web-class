@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,69 @@
         <div id="navbar"></div>
     </header>
     <main> 
+        <h3 id="this-page-url"></h3>
+        <h1>HTML</h1>
+        <section class="heb">
+        <p>HTML משמשת לתיאור דפי web. הדפדפן ״מבין״ איך ״לצייר״ את הדף על המסך ע״י קריאת ״קוד״ ה HTML.</p>
+        <p>מתכנת דף הHTML כותב תגים שבהם נמצא התיאור של מראה הדף.</p>
+        <p>תגים תמיד רשומים בתוך סוגריים מחודדים &lt;&gt;.</p>
+        <p>בתגים יש אלמנטים ותכונות שלהם.
+            <ul>
+                <li>אלמנט זה אובייקט מסך משתמש (למשל כותרת, מקטע, תמונה, טבלה, היפר-לינק), </li>
+                <li>ותכונה מתארת משהו באלמנט (למשל כמו צבע, גובה, רוחב).</li>
+            </ul>
+        </p>
+        <p>תגים בד״כ נרשמים בזוגות (תג פותח ותג סוגר).
+            <br>
+            למשל &lt;h1&gt;  פותח תג של כותרת ו &lt;h1/&gt; סוגר.
+        </p>
+        <p>יש מספר תגים בודדים שנקראים non-container tags אין להם תוכן, <br>דוגמאות: 
+        <ul>
+            <li>ירידת שורה - br </li>
+            <li>ותמונה - img.</li>
+        </ul>
+        </p>
+        <p>תגים ב HTML אינם case sensitive.</p>
+        <p>דפדפנים מתעלמים מ״תווים לבנים״, אם נשים אותם בקוד שלנו הם לא יופיעו בדף (למשל אם נשים שני תווי רווח, אחד  הדפדפן יציג אבל יתעלם מהשני).</p>
+        <p>ניתן לקנן (לשים אחד בתוך השני בכמה רמות עומק) תגי HTML, למשל:</p>
+        <code>&lt;p&gt;&lt;h1&gt;This headline
+            is nested inside a paragraph&lt;/h1&gt;&lt;/p&gt;</code>
+        <p>נרשום בתחילת דף הHTML שלנו את ההכרזה שאומרת לדפדפן שאנחנו משתמשים ב HTML5:</p>
+        </section>
+        <section >
+            <code >&lt;!DOCTYPE html&gt;</code>
+        </section>
+        <section class="heb">
+            <p>דוגמה לדף web: ניצור קובץ בעורך טקסט, נרשום בו את הקוד הבא ונשמור אותו בשם-
+                <b class="filename">helloworld.html</b></p>
+        </section>
+        <section >
+            <code ><pre>
+&lt;!DOCTYPE <font color="blue">html</font>&gt;
+&lt;<font color="navy">html</font>&gt;
+    &lt;<font color="navy">body</font>&gt;
 
+        &lt;<font color="navy">h1</font>&gt;My First Heading&lt;/<font color="navy">h1</font>&gt;
+
+        &lt;<font color="navy">h4</font>&gt;Hello World!&lt;/<font color="navy">h4</font>&gt;
+
+        &lt;<font color="navy">a</font> <font color="blue">href</font>=<font color="green">"http://www.google.com"</font>&gt; This is a link&lt;/<font color="navy">a</font>&gt;
+
+        &lt;<font color="navy">p</font>&gt;My first paragraph.&lt;/<font color="navy">p</font>&gt;
+
+    &lt;/<font color="navy">body</font>&gt;
+&lt;/<font color="navy">html</font>&gt;
+                </pre>
+            </code>
+        </section>
+        <section class="heb">
+            <p>   דבל קליק
+                על הקובץ שיצרנו יפתח אותו בדפדפן.</p>
+        </section>
+        <hr>
+        <section class="heb">
+            <p>סיכום תגים נפוצים ביותר:</p>
+        </section>
     </main>
     <script src="header.js"></script>
 </body>
