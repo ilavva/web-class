@@ -1,0 +1,1412 @@
+<table>
+  <caption>
+    <h2><a name="TOC-Document-Structure"></a>Document Structure</h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>Opening Tag</th>
+      <th>Closing Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;html&gt;</td>
+      <td>&lt;/html&gt;</td>
+      <td>Opens and closes an HTML document</td>
+    </tr>
+    <tr>
+      <td>&lt;head&gt;</td>
+      <td>&lt;/head&gt;</td>
+      <td>
+        The first of two main sections of an HTML document. The &lt;head&gt;
+        section is used to provide information about the document for use
+        primarily by search engines and browsers.
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;title&gt;</td>
+      <td>&lt;/title&gt;</td>
+      <td>
+        The title of document. This element is nested inside the &lt;head&gt;
+        section.&nbsp;
+        <b
+          >In HTML5, this is the only required tag other than the DOCTYPE
+          declaration.</b
+        >
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;body&gt;</td>
+      <td>&lt;/body&gt;</td>
+      <td>
+        The second of two main sections of an HTML document. The &lt;body&gt;
+        section contains all the content of the web page.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>
+    <h2><a name="TOC-Content-Container-Tags"></a>Content (Container) Tags</h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>Opening Tag</th>
+      <th>Closing Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;h1&gt; to &lt;h6&gt;</td>
+      <td>&lt;/h1&gt;to&lt;/h6&gt;</td>
+      <td>Headings. H1 is the main heading, H2 is secondary, etc.</td>
+    </tr>
+    <tr>
+      <td>&lt;p&gt;</td>
+      <td>&lt;/p&gt;</td>
+      <td>Paragraph</td>
+    </tr>
+    <tr>
+      <td>&lt;div&gt;</td>
+      <td>&lt;/div&gt;</td>
+      <td>A container for a&nbsp;<i>block</i>&nbsp;of content</td>
+    </tr>
+    <tr>
+      <td>&lt;span&gt;</td>
+      <td>&lt;/span&gt;</td>
+      <td>
+        A container for&nbsp;<i>in-line</i>&nbsp;content, such as content inside
+        a paragraph.
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;em&gt;</td>
+      <td>&lt;/em&gt;</td>
+      <td>
+        Gives the contained text emphasis (usually
+        as&nbsp;<i>italics</i>).&nbsp;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;strong&gt;</td>
+      <td>&lt;/strong&gt;</td>
+      <td>Makes the contained text&nbsp;<b>bold</b>.&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&lt;a href = "document location"&gt;</td>
+      <td>&lt;/a&gt;</td>
+      <td>Link</td>
+    </tr>
+    <tr>
+      <td>&lt;ol&gt;</td>
+      <td>&lt;/ol&gt;</td>
+      <td>Ordered (numbered) list</td>
+    </tr>
+    <tr>
+      <td>&lt;ul&gt;</td>
+      <td>&lt;/ul&gt;</td>
+      <td>Unordered (bulleted) list</td>
+    </tr>
+    <tr>
+      <td>&lt;li&gt;</td>
+      <td>&lt;/li&gt;</td>
+      <td>
+        List item, must be nested inside a list element such as a &lt;ol&gt; or
+        &lt;ul&gt;
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;!--</td>
+      <td>--&gt;</td>
+      <td>
+        Comment. Anything between these tags is not displayed on the screen.
+        This is useful for making notes to yourself or to others who may view
+        the source code of the web page.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>
+    <h2>
+      <a name="TOC-HTML5-Semantic-Tags"></a>HTML5&nbsp;<i>Semantic</i>&nbsp;Tags
+    </h2>
+    <p>
+      HTML5 introduced several new tags called&nbsp;semantic&nbsp;tags. These
+      tags were designed to communicate the function of blocks of content that
+      were common on many web pages. Prior to HTML5, developers just used
+      &lt;div&gt; tags for all blocks.
+    </p>
+  </caption>
+  <thead>
+    <tr>
+      <th>Opening Tag</th>
+      <th>Closing Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;header&gt;</td>
+      <td>&lt;/header&gt;</td>
+      <td>
+        Contains introductory content for a page (e.g., a banner), or a section
+        of a page.
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;nav&gt;</td>
+      <td>&lt;/nav&gt;</td>
+      <td>Contains navigation content, such as a website navigation menu.</td>
+    </tr>
+    <tr>
+      <td>&lt;main&gt;</td>
+      <td>&lt;/main&gt;</td>
+      <td>Contains the main content of the web page.</td>
+    </tr>
+    <tr>
+      <td>&lt;aside&gt;</td>
+      <td>&lt;/aside&gt;</td>
+      <td>
+        Contains content that is&nbsp;tangentially&nbsp;related to the main
+        content of the page (often this is presented in a sidebar).
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;footer&gt;</td>
+      <td>&lt;/footer&gt;</td>
+      <td>
+        Contains the footer of a page, or of a section of a page. Typically the
+        footer contains information&nbsp;<i>about</i>&nbsp;the content, such as
+        the author and a copyright statement.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>
+    <h2>
+      <a name="TOC-Empty-Non-Container-Tags"></a>Empty (Non-Container)
+      Tags&nbsp;
+    </h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;br /&gt;</td>
+      <td width="65%">Line break.&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&lt;img src ="image location" alt="alternate text" /&gt;</td>
+      <td>Inserts an image into a web page.</td>
+    </tr>
+  </tbody>
+</table>
+<table>
+  <caption>
+    <h2><a name="TOC-Tables"></a>Tables</h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>Opening Tag</th>
+      <th>Closing Tag</th>
+      <th>Sample Attributes</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;table&gt;</td>
+      <td>&lt;/table&gt;</td>
+      <td>&nbsp;</td>
+      <td>Adds a table</td>
+    </tr>
+    <tr>
+      <td>&lt;tr&gt;</td>
+      <td>&lt;/tr&gt;</td>
+      <td>&nbsp;</td>
+      <td>Table row (start &amp; end).</td>
+    </tr>
+    <tr>
+      <td>&lt;th&gt;</td>
+      <td>&lt;/th&gt;</td>
+      <td>scope="row"<br />scope="col"</td>
+      <td>
+        When creating a table to display data, use this tag to differentiate the
+        first row or column of cells as heading cells for all the other cells in
+        the same column or row. Browsers typically display this element bold and
+        centered within the table cell. The&nbsp;scope&nbsp;attribute defines
+        whether this is a row header or column header.
+      </td>
+    </tr>
+    <tr>
+      <td>&lt;td&gt;</td>
+      <td>&lt;/td&gt;</td>
+      <td>&nbsp;</td>
+      <td>Table data cell.</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>colspan="number"</td>
+      <td>
+        Use with &lt;th&gt; or &lt;td&gt; elements. Spans cells across multiple
+        columns.
+      </td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>rowspan="number"</td>
+      <td>
+        Use with &lt;th&gt; or &lt;td&gt; elements. Spans cells across multiple
+        rows.
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr />
+
+<table>
+  <caption>
+    <h2>Tags</h2>
+  </caption>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Short description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-THe-root-element"></a>The root element</h3>
+      </th>
+    </tr>
+
+    <tr></tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/html.html"
+          rel="nofollow"
+          >&lt;html&gt;</a
+        >
+      </td>
+      <td>Contains the whole document</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Document-metadata"></a>Document metadata</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/head.html"
+          rel="nofollow"
+          >&lt;head&gt;</a
+        >
+      </td>
+      <td>Defines the document's header block</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/title.html"
+          rel="nofollow"
+          >&lt;title&gt;</a
+        >
+      </td>
+      <td>Specifies the document's title</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/base.html"
+          rel="nofollow"
+          >&lt;base&gt;</a
+        >
+      </td>
+      <td>Sets base URI to solve relative URIs</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/link.html"
+          rel="nofollow"
+          >&lt;link&gt;</a
+        >
+      </td>
+      <td>Gives relational information for documents</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/meta.html"
+          rel="nofollow"
+          >&lt;meta&gt;</a
+        >
+      </td>
+      <td>Provides information for the document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/style.html"
+          rel="nofollow"
+          >&lt;style&gt;</a
+        >
+      </td>
+      <td>Contains presentational attributes</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Sections"></a>Sections</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/body.html"
+          rel="nofollow"
+          >&lt;body&gt;</a
+        >
+      </td>
+      <td>Contains all renderable elements</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/article.html"
+          rel="nofollow"
+          >&lt;article&gt;</a
+        >
+      </td>
+      <td>Contains distributable content</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/section.html"
+          rel="nofollow"
+          >&lt;section&gt;</a
+        >
+      </td>
+      <td>Defines a section of the document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/nav.html"
+          rel="nofollow"
+          >&lt;nav&gt;</a
+        >
+      </td>
+      <td>Defines a navigation section</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/aside.html"
+          rel="nofollow"
+          >&lt;aside&gt;</a
+        >
+      </td>
+      <td>Holds content only slightly related</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h1.html" rel="nofollow"
+          >&lt;h1&gt;</a
+        >
+      </td>
+      <td>Inserts a level 1 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h2.html" rel="nofollow"
+          >&lt;h2&gt;</a
+        >
+      </td>
+      <td>Inserts a level 2 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h3.html" rel="nofollow"
+          >&lt;h3&gt;</a
+        >
+      </td>
+      <td>Inserts a level 3 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h4.html" rel="nofollow"
+          >&lt;h4&gt;</a
+        >
+      </td>
+      <td>Inserts a level 4 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h5.html" rel="nofollow"
+          >&lt;h5&gt;</a
+        >
+      </td>
+      <td>Inserts a level 5 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/h6.html" rel="nofollow"
+          >&lt;h6&gt;</a
+        >
+      </td>
+      <td>Inserts a level 6 heading</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/hgroup.html"
+          rel="nofollow"
+          >&lt;hgroup&gt;</a
+        >
+      </td>
+      <td>Groups consecutive headings</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/header.html"
+          rel="nofollow"
+          >&lt;header&gt;</a
+        >
+      </td>
+      <td>Contains the header of a section</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/footer.html"
+          rel="nofollow"
+          >&lt;footer&gt;</a
+        >
+      </td>
+      <td>Contains the footer of a section</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/address.html"
+          rel="nofollow"
+          >&lt;address&gt;</a
+        >
+      </td>
+      <td>Provides contact information</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Grouping-content"></a>Grouping content</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/p.html" rel="nofollow"
+          >&lt;p&gt;</a
+        >
+      </td>
+      <td>Inserts a paragraph</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/hr.html" rel="nofollow"
+          >&lt;hr&gt;</a
+        >
+      </td>
+      <td>Draws a horizontal line or rule</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/pre.html"
+          rel="nofollow"
+          >&lt;pre&gt;</a
+        >
+      </td>
+      <td>Defines a block of preformatted text</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/blockquote.html"
+          rel="nofollow"
+          >&lt;blockquote&gt;</a
+        >
+      </td>
+      <td>Block level quotation</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/ol.html" rel="nofollow"
+          >&lt;ol&gt;</a
+        >
+      </td>
+      <td>Inserts an ordered list</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/ul.html" rel="nofollow"
+          >&lt;ul&gt;</a
+        >
+      </td>
+      <td>Inserts an unordered list</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/menu.html"
+          rel="nofollow"
+          >&lt;menu&gt;</a
+        >
+      </td>
+      <td>Inserts a toolbar menu</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/li.html" rel="nofollow"
+          >&lt;li&gt;</a
+        >
+      </td>
+      <td>Defines a list item</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/dl.html" rel="nofollow"
+          >&lt;dl&gt;</a
+        >
+      </td>
+      <td>Inserts a definitions list</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/dt.html" rel="nofollow"
+          >&lt;dt&gt;</a
+        >
+      </td>
+      <td>Inserts a term in a list</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/dd.html" rel="nofollow"
+          >&lt;dd&gt;</a
+        >
+      </td>
+      <td>Provides descriptions in a list</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/figure.html"
+          rel="nofollow"
+          >&lt;figure&gt;</a
+        >
+      </td>
+      <td>Marks its content as a reference</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/figcaption.html"
+          rel="nofollow"
+          >&lt;figcaption&gt;</a
+        >
+      </td>
+      <td>Provides a caption for a figure</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/main.html"
+          rel="nofollow"
+          >&lt;main&gt;</a
+        >
+      </td>
+      <td>Acts as a main container for elements</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/div.html"
+          rel="nofollow"
+          >&lt;div&gt;</a
+        >
+      </td>
+      <td>Defines a block of content</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Text-level-semantics"></a>Text-level semantics</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/a.html" rel="nofollow"
+          >&lt;a&gt;</a
+        >
+      </td>
+      <td>Inserts links or bookmarks</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/em.html" rel="nofollow"
+          >&lt;em&gt;</a
+        >
+      </td>
+      <td>Indicates emphasis</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/strong.html"
+          rel="nofollow"
+          >&lt;strong&gt;</a
+        >
+      </td>
+      <td>Indicates strong emphasis</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/small.html"
+          rel="nofollow"
+          >&lt;small&gt;</a
+        >
+      </td>
+      <td>Renders text in "small" font</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/s.html" rel="nofollow"
+          >&lt;s&gt;</a
+        >
+      </td>
+      <td>Content no longer accurate or relevant</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/cite.html"
+          rel="nofollow"
+          >&lt;cite&gt;</a
+        >
+      </td>
+      <td>Inserts a citation or reference</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/q.html" rel="nofollow"
+          >&lt;q&gt;</a
+        >
+      </td>
+      <td>Inserts an inline quotation</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/dfn.html"
+          rel="nofollow"
+          >&lt;dfn&gt;</a
+        >
+      </td>
+      <td>Provides a definition for a term</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/abbr.html"
+          rel="nofollow"
+          >&lt;abbr&gt;</a
+        >
+      </td>
+      <td>Explains abbreviations</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/ruby.html"
+          rel="nofollow"
+          >&lt;ruby&gt;</a
+        >
+      </td>
+      <td>Inserts ruby annotated text</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/rt.html" rel="nofollow"
+          >&lt;rt&gt;</a
+        >
+      </td>
+      <td>Provides a ruby annotation</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/rp.html" rel="nofollow"
+          >&lt;rp&gt;</a
+        >
+      </td>
+      <td>Makes text to be ignored in ruby</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/data.html"
+          rel="nofollow"
+          >&lt;data&gt;</a
+        >
+      </td>
+      <td>Provides a machine-readable version</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/time.html"
+          rel="nofollow"
+          >&lt;time&gt;</a
+        >
+      </td>
+      <td>Represents a date and/or time</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/code.html"
+          rel="nofollow"
+          >&lt;code&gt;</a
+        >
+      </td>
+      <td>Represents computer code</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/var.html"
+          rel="nofollow"
+          >&lt;var&gt;</a
+        >
+      </td>
+      <td>Indicates an instance of a variable</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/samp.html"
+          rel="nofollow"
+          >&lt;samp&gt;</a
+        >
+      </td>
+      <td>Contains a program's sample output</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/kbd.html"
+          rel="nofollow"
+          >&lt;kbd&gt;</a
+        >
+      </td>
+      <td>Represents text entered by users</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/sub.html"
+          rel="nofollow"
+          >&lt;sub&gt;</a
+        >
+      </td>
+      <td>Defines subscript text</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/sup.html"
+          rel="nofollow"
+          >&lt;sup&gt;</a
+        >
+      </td>
+      <td>Defines superscript text</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/i.html" rel="nofollow"
+          >&lt;i&gt;</a
+        >
+      </td>
+      <td>Renders italic text</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/b.html" rel="nofollow"
+          >&lt;b&gt;</a
+        >
+      </td>
+      <td>Text in bold style</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/u.html" rel="nofollow"
+          >&lt;u&gt;</a
+        >
+      </td>
+      <td>Represents non-textual annotations</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/mark.html"
+          rel="nofollow"
+          >&lt;mark&gt;</a
+        >
+      </td>
+      <td>Marks text in another document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/bdi.html"
+          rel="nofollow"
+          >&lt;bdi&gt;</a
+        >
+      </td>
+      <td>Isolates for bidirectional formatting</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/bdo.html"
+          rel="nofollow"
+          >&lt;bdo&gt;</a
+        >
+      </td>
+      <td>Overrides the bidirectional algorithm</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/span.html"
+          rel="nofollow"
+          >&lt;span&gt;</a
+        >
+      </td>
+      <td>Assings attributes to text (inline)</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/br.html" rel="nofollow"
+          >&lt;br&gt;</a
+        >
+      </td>
+      <td>Forces a line break</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/wbr.html"
+          rel="nofollow"
+          >&lt;wbr&gt;</a
+        >
+      </td>
+      <td>Represents a line break opportunity</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Edits"></a>Edits</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/ins.html"
+          rel="nofollow"
+          >&lt;ins&gt;</a
+        >
+      </td>
+      <td>Indicates inserted text</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/del.html"
+          rel="nofollow"
+          >&lt;del&gt;</a
+        >
+      </td>
+      <td>Indicates deleted text</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Embedded-content"></a>Embedded content</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/picture.html"
+          rel="nofollow"
+          >&lt;picture&gt;</a
+        >
+      </td>
+      <td>Inserts a multi-source image</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/source.html"
+          rel="nofollow"
+          >&lt;source&gt;</a
+        >
+      </td>
+      <td>Specifies alternative media resources</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/img.html"
+          rel="nofollow"
+          >&lt;img&gt;</a
+        >
+      </td>
+      <td>Inserts an image</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/iframe.html"
+          rel="nofollow"
+          >&lt;iframe&gt;</a
+        >
+      </td>
+      <td>Inserts a frame inside a document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/embed.html"
+          rel="nofollow"
+          >&lt;embed&gt;</a
+        >
+      </td>
+      <td>Integrates external applications</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/object.html"
+          rel="nofollow"
+          >&lt;object&gt;</a
+        >
+      </td>
+      <td>Runs external applications</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/param.html"
+          rel="nofollow"
+          >&lt;param&gt;</a
+        >
+      </td>
+      <td>Sets a parameter for an object</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/video.html"
+          rel="nofollow"
+          >&lt;video&gt;</a
+        >
+      </td>
+      <td>Inserts videos in the document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/audio.html"
+          rel="nofollow"
+          >&lt;audio&gt;</a
+        >
+      </td>
+      <td>Inserts audio files in the document</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/track.html"
+          rel="nofollow"
+          >&lt;track&gt;</a
+        >
+      </td>
+      <td>Provides text tracks for a video</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/map.html"
+          rel="nofollow"
+          >&lt;map&gt;</a
+        >
+      </td>
+      <td>Defines a client-side image map</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/area.html"
+          rel="nofollow"
+          >&lt;area&gt;</a
+        >
+      </td>
+      <td>Defines sectors for image maps</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Tabular-data"></a>Tabular data</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/table.html"
+          rel="nofollow"
+          >&lt;table&gt;</a
+        >
+      </td>
+      <td>Inserts a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/caption.html"
+          rel="nofollow"
+          >&lt;caption&gt;</a
+        >
+      </td>
+      <td>Provides a caption for a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/colgroup.html"
+          rel="nofollow"
+          >&lt;colgroup&gt;</a
+        >
+      </td>
+      <td>Groups columns in a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/col.html"
+          rel="nofollow"
+          >&lt;col&gt;</a
+        >
+      </td>
+      <td>Sets attributes for a table's columns</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/tbody.html"
+          rel="nofollow"
+          >&lt;tbody&gt;</a
+        >
+      </td>
+      <td>Defines the body of a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/thead.html"
+          rel="nofollow"
+          >&lt;thead&gt;</a
+        >
+      </td>
+      <td>Defines the header of a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/tfoot.html"
+          rel="nofollow"
+          >&lt;tfoot&gt;</a
+        >
+      </td>
+      <td>Defines the footer of a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/tr.html" rel="nofollow"
+          >&lt;tr&gt;</a
+        >
+      </td>
+      <td>Inserts a row in a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/td.html" rel="nofollow"
+          >&lt;td&gt;</a
+        >
+      </td>
+      <td>Inserts a regular cell in a table</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.htmlquick.com/reference/tags/th.html" rel="nofollow"
+          >&lt;th&gt;</a
+        >
+      </td>
+      <td>Inserts a header cell in a table</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Forms"></a>Forms</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/form.html"
+          rel="nofollow"
+          >&lt;form&gt;</a
+        >
+      </td>
+      <td>Inserts a form</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/label.html"
+          rel="nofollow"
+          >&lt;label&gt;</a
+        >
+      </td>
+      <td>Sets a label for a control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/input.html"
+          rel="nofollow"
+          >&lt;input&gt;</a
+        >
+      </td>
+      <td>Displays an input control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/button.html"
+          rel="nofollow"
+          >&lt;button&gt;</a
+        >
+      </td>
+      <td>Creates a button control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/select.html"
+          rel="nofollow"
+          >&lt;select&gt;</a
+        >
+      </td>
+      <td>Creates a select control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/datalist.html"
+          rel="nofollow"
+          >&lt;datalist&gt;</a
+        >
+      </td>
+      <td>Provides suggestions for input fields</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/optgroup.html"
+          rel="nofollow"
+          >&lt;optgroup&gt;</a
+        >
+      </td>
+      <td>Groups options in a select control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/option.html"
+          rel="nofollow"
+          >&lt;option&gt;</a
+        >
+      </td>
+      <td>Inserts an option in a select control</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/textarea.html"
+          rel="nofollow"
+          >&lt;textarea&gt;</a
+        >
+      </td>
+      <td>Creates a multiline text input</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/output.html"
+          rel="nofollow"
+          >&lt;output&gt;</a
+        >
+      </td>
+      <td>Shows the output of a process</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/progress.html"
+          rel="nofollow"
+          >&lt;progress&gt;</a
+        >
+      </td>
+      <td>Shows a task's completion progress</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/meter.html"
+          rel="nofollow"
+          >&lt;meter&gt;</a
+        >
+      </td>
+      <td>Represents a measurement</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/fieldset.html"
+          rel="nofollow"
+          >&lt;fieldset&gt;</a
+        >
+      </td>
+      <td>Groups controls in a form</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/legend.html"
+          rel="nofollow"
+          >&lt;legend&gt;</a
+        >
+      </td>
+      <td>Assigns a caption for a fieldset</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Interactive-elements"></a>Interactive elements</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/details.html"
+          rel="nofollow"
+          >&lt;details&gt;</a
+        >
+      </td>
+      <td>Provides collapsable information</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/summary.html"
+          rel="nofollow"
+          >&lt;summary&gt;</a
+        >
+      </td>
+      <td>Provides a summary for a details element</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/dialog.html"
+          rel="nofollow"
+          >&lt;dialog&gt;</a
+        >
+      </td>
+      <td>Inserts a dialog box</td>
+    </tr>
+    <tr>
+      <th colspan="2">
+        <h3><a name="TOC-Scripting"></a>Scripting</h3>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/script.html"
+          rel="nofollow"
+          >&lt;script&gt;</a
+        >
+      </td>
+      <td>Contains scripts</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/noscript.html"
+          rel="nofollow"
+          >&lt;noscript&gt;</a
+        >
+      </td>
+      <td>Provides alternative content for scripts</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/template.html"
+          rel="nofollow"
+          >&lt;template&gt;</a
+        >
+      </td>
+      <td>Defines a template for data to come</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/slot.html"
+          rel="nofollow"
+          >&lt;slot&gt;</a
+        >
+      </td>
+      <td>Placeholder for data in components</td>
+    </tr>
+    <tr>
+      <td>
+        <a
+          href="http://www.htmlquick.com/reference/tags/canvas.html"
+          rel="nofollow"
+          >&lt;canvas&gt;</a
+        >
+      </td>
+      <td>Renders dynamic bitmap graphics</td>
+    </tr>
+  </tbody>
+</table>

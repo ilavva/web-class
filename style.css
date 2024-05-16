@@ -7,7 +7,7 @@
 
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
 
   --font-color: rgb(50, 50, 41);
@@ -31,6 +31,9 @@
   --code-border-color: rgb(98, 98, 90);
 
   --hr-color: white;
+  --table-header-bg-color: #f99304;
+  --table-header-font-color: white;
+  --table-bg-color-active: rgb(255, 253, 244);
 }
 body {
   background-color: var(--bg-body-color);
@@ -157,6 +160,7 @@ nav ul li ul:focus {
   z-index: 2;
   margin-top: 0.5rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 nav ul li ul li {
@@ -172,6 +176,15 @@ main {
 h3 {
   font-weight: 600;
   font-size: larger;
+}
+h2 {
+  font-weight: 600;
+  font-size: large;
+}
+h2 i {
+  font-style: italic;
+  font-weight: 600;
+  font-size: large;
 }
 h1 {
   font-weight: 600;
@@ -213,4 +226,31 @@ section .filename {
 main hr {
   margin-top: 1rem;
   border: 1px var(--hr-color) solid;
+}
+
+main table {
+  width: 100%;
+}
+main table caption {
+  text-align: left;
+  padding: 2rem 0rem 0.5rem 0rem;
+}
+
+main table caption p {
+  margin-top: 1rem;
+}
+main table th {
+  text-wrap: nowrap;
+  padding: 0.3rem;
+  background-color: var(--table-header-bg-color);
+  color: var(--table-header-font-color);
+  text-align: start;
+}
+main table td {
+  padding: 0.3rem;
+
+  text-align: start;
+}
+main table tr:hover {
+  background-color: var(--table-bg-color-active);
 }
