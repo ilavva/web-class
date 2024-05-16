@@ -15,7 +15,7 @@
 
   --bg-nav-color: rgb(98, 98, 90);
 
-  --menu-border-color: #f97204;
+  --menu-border-color: #f99704;
   --header-font-color: white;
 
   --menu-bg-color: rgb(246, 235, 215);
@@ -42,8 +42,11 @@ body {
 
 header {
   background-color: var(--bg-nav-color);
-  border-bottom: 1rem solid var(--menu-border-color);
+
   height: 9rem;
+  border-left: 2px solid var(--hr-color);
+  border-right: 2px solid var(--hr-color);
+  border-bottom: 1rem solid var(--menu-border-color);
 }
 @media screen and (max-width: 1310px) {
   header {
@@ -61,9 +64,11 @@ header {
   }
 }
 header h1 {
-  padding: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
   color: var(--header-font-color);
   text-decoration: none;
+  text-align: start;
 }
 header a,
 header a:visited {
@@ -171,6 +176,7 @@ nav ul li ul li {
 
 main {
   padding: 20px;
+  border: 2px solid var(--hr-color);
 }
 
 h3 {

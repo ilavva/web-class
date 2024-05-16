@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web - web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    .mySlides>img {
+        display:none;
+        margin: auto;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    #pages {
+        margin: auto;
+        text-align: center;
+     
+    }
+    .w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+    .w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none} 
+    .w3-button:hover{color:#000!important;background-color:#ccc!important}
+    .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+    .w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+    .w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+    .w3-bar{width:100%;overflow:hidden}
+    .w3-bar .w3-button{white-space:normal}
+    .w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+    .w3-green,.w3-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+    </style>
+  <body>
+    <header>
+        <a href="./"><h1>web</h1></a></li>
+        <div class="source_html" data-src="nav_links.html"></div>
+    </header>
+    <main> 
+        <h3 id="this-page-url"></h3>
+       
+        <section class="mySlides">
+            <img page-num="1" src="https://web-class.netlify.app/web/web1.jpeg">
+            <img page-num="2" src="https://web-class.netlify.app/web/web2.jpeg">
+            <img page-num="3" src="https://web-class.netlify.app/web/web3.jpeg">
+            <img page-num="4" src="https://web-class.netlify.app/web/web4.jpeg">
+            <img page-num="5" src="https://web-class.netlify.app/web/web5.jpeg">
+            <img page-num="6" src="https://web-class.netlify.app/web/web6.jpeg">
+            <img page-num="7" src="https://web-class.netlify.app/web/web7.jpeg">
+            <img page-num="8" src="https://web-class.netlify.app/web/web8.jpeg">
+            <img page-num="9" src="https://web-class.netlify.app/web/web9.jpeg">
+            <img page-num="10" src="https://web-class.netlify.app/web/web10.jpeg">
+            <img page-num="11" src="https://web-class.netlify.app/web/web11.jpeg">
+            <img page-num="12" src="https://web-class.netlify.app/web/web12.jpeg">
+            <img page-num="13" src="https://web-class.netlify.app/web/web13.jpeg">
+            <img page-num="14" src="https://web-class.netlify.app/web/web14.jpeg">
+            <img page-num="15" src="https://web-class.netlify.app/web/web15.jpeg">
+            <img page-num="16" src="https://web-class.netlify.app/web/web16.jpeg">
+            <img page-num="17" src="https://web-class.netlify.app/web/web17.jpeg">
+            <img page-num="18" src="https://web-class.netlify.app/web/web18.jpeg">
+            <img page-num="19" src="https://web-class.netlify.app/web/web19.jpeg">
+            <img page-num="20" src="https://web-class.netlify.app/web/web20.jpeg">
+            <img page-num="21" src="https://web-class.netlify.app/web/web21.jpeg">
+            <img page-num="22" src="https://web-class.netlify.app/web/web22.jpeg">
+            <img page-num="23" src="https://web-class.netlify.app/web/web23.jpeg">
+             
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </section>
+        <div id="pages" class="w3-bar"></div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+    let slideIndex = 1;
+    showDivs(slideIndex);
+    showPageNumbers(slideIndex);
+
+    function showImg(n){
+        slideIndex = n;
+        showDivs(n);
+    }
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+    function plusDivsImg(e) {
+        console.log(e);
+        const page = e.target.getAttribute("page-num");
+        slideIndex = parseInt(page)+1;
+        showDivs(slideIndex);
+        showPageNumbers(slideIndex);
+    }
+    function showDivs(n) {
+        let i;
+        const x = document.querySelectorAll(".mySlides img");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+            x[i].addEventListener("click",plusDivsImg) ;
+            x[i].addEventListener("keypress",plusDivsImg) ;
+        }
+        x[slideIndex-1].style.display = "block"; 
+
+        showPageNumbers(n);
+    }
+    
+    function showPageNumbers(n) {
+        const x = document.querySelectorAll(".mySlides img");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        
+        let pages_nav = "";
+        for (i = 1; i < x.length+1; i++) {
+            let cc = "";
+            if(i==n) {
+                cc = "w3-green";
+            }
+            pages_nav +=  `<a onclick="showImg(${i})" class="w3-button ${cc}">${i}</a>`
+        }
+        document.querySelector("#pages").innerHTML = pages_nav;
+    }
+    </script>
+  </body>
+</html>
