@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form - web</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+        <a href="./"><h1>web</h1></a></li>
+        <div class="source_html" data-src="nav_links.html"></div>
+    </header>
+    <main> 
+        <h3 id="this-page-url"></h3>
+        <h1>HTML</h1>
+        <section class="heb">
+            <h2>תרגיל:</h2>
+            <p>בנו טופס כזה, לפי ההוראות שבהמשך:</p>
+            <p><img src="https://web-class.netlify.app/htmlform/signup.png" alt=""></p>
+            <p>הוראות לבנית הטופס:</p>
+            <ol>
+                <li><p>הטופס כולו צריך להיות בתוך tag מסוג &lt;form&gt; לא חובה להוסיף את תכונת action.</p></li>
+                <li><p>על אלמנטי הטופס שמשמשים לקבלת מידע מהמשתמש להיות &lt;input&gt; מהסוגים (...=type) המפורטים, בנוסף, עבור כל אלמנט יש לקיים אכיפות ותנאים אם מצויינים:</p>
+                    <ul class="list">
+                        <li>תיבת טקסט שם פרטי - text , והוסיפו את התכונה placeholder עם הערך כמו בתמונה</li>
+                        <li>תיבת טקסט שם משפחה - text  , והוסיפו את התכונה placeholder עם הערך כמו בתמונה</li>
+                        <li>תיבת טקסט שם משתמש - text   , והוסיפו את התכונה placeholder עם הערך כמו בתמונה</li>
+                        <li>תיבת טקסט סיסמה  - password</li>
+                        <li>תיבת טקסט וידוא סיסמה  - password</li>
+                    <li>
+                    <p>בחירה חודש - select (עם 12 options, שהן: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+                        <br/>
+                        (כלומר, זהו אלמנט בחירה רגיל שתיצרו בעצמכם, ולא מסוג month).</p>
+                    </li>
+                    <div class="challenge"><p >
+                        תוספת תרגיל רשות אתגר:
+<br>
+נסו לשים את בחירת השנה ובחירת היום במצב ״disabled", ורק לאחר שהמשתמש בחר את החודש, 
+<br>
+יש לאפשר לו לבחור את היום והשנה ע״י שינוי הערך של תכונת disabled שלהם,
+<br>
+קוד עזר (נניח שלאלמנט של בחירת השנה נתנו את הid הזה: mySelectYear, אז נשתמש בקוד הבא בתג הselect של בחירת החודש) :
+</p>
+<section class="eng" dir="ltr"><p>
+    &lt;select onchange="document.querySelector('#mySelectYear').disabled = false;"&gt;
+    </p></section>
+
+</div> 
+<p>עבור שנה (וגם עבור יום באופן דומה) השתמשו בקוד הבא:</p>
+<section class="eng" dir="ltr"><p>
+    &lt;input type="number" min="1923" max="2023" step="1" value="2003" /&gt;
+    </p></section>
+<p>(זו לא הדרך האידיאלית, אבל לתרגיל הזה נסתפק באופן הזה)</p>
+<p>בחירת מין - select.</p>
+                    </ul>
+                </li>
+                <li><p>עבור שנה (וגם עבור יום באופן דומה) השתמשו בקוד הבא:</p></li>
+                <li></li>
+            </ol>
+        </section>
+        
+        <hr>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- &lt;&gt; -->

@@ -200,7 +200,8 @@ h1 {
   text-decoration: underline;
 }
 section {
-  line-height: 120%;
+  line-height: 150%;
+  text-align: start;
 }
 section p {
   margin-top: 1rem;
@@ -209,7 +210,12 @@ section ul {
   list-style-type: none;
   padding-inline-start: 2rem;
 }
-
+section ul.list li:before {
+  content: "\2014";
+}
+section img {
+  direction: ltr;
+}
 section code {
   background-color: var(--code-background-color);
   padding: 20px;
@@ -222,12 +228,23 @@ section code {
 section code * {
   font-weight: bolder;
 }
-.heb * {
+.eng {
+  direction: ltr;
+  /* unicode-bidi: embed; */
+}
+.heb {
   direction: rtl;
+}
+section.heb > img {
+  direction: ltr;
 }
 section .filename {
   font-weight: bold;
   color: var(--h1-header-color);
+}
+.challenge {
+  border-right: 2px solid var(--code-border-color);
+  padding-right: 2rem;
 }
 main hr {
   margin-top: 1rem;
