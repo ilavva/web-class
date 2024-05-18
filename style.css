@@ -82,7 +82,10 @@ header a:hover {
 a {
   text-decoration: none;
 }
-
+.links a {
+  text-decoration: underline;
+  cursor: pointer;
+}
 #navbar {
   display: block;
 }

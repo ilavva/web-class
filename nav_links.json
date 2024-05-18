@@ -1,0 +1,554 @@
+{
+  "web": [
+    {
+      "href": "https://web-class.netlify.app/registration",
+      "text": "Registration"
+    },
+    {
+      "href": "./",
+      "text": "HTML",
+      "links": [
+        { "id": ":0", "href": "./", "text": "HTML5" },
+        {
+          "id": ":1",
+          "href": "https://web-class.netlify.app/html-exer3",
+          "text": "HTML - Exercise"
+        },
+        { "id": ":2", "href": "./htmlform.html", "text": "HTML Form" },
+        {
+          "id": ":3",
+          "href": "https://web-class.netlify.app/htmlformssolution",
+          "text": "HTML Forms Solution"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/css-1",
+      "text": "CSS",
+      "links": [
+        {
+          "id": ":4",
+          "href": "https://web-class.netlify.app/css",
+          "text": "CSS"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/js",
+      "text": "JS",
+      "links": [
+        {
+          "id": ":5",
+          "href": "https://web-class.netlify.app/jsbeginnersoverview-1",
+          "text": "JSBeginnersOverview"
+        },
+        {
+          "id": ":6",
+          "href": "https://web-class.netlify.app/if",
+          "text": "if"
+        },
+        {
+          "id": ":7",
+          "href": "https://web-class.netlify.app/for",
+          "text": "for"
+        },
+        {
+          "id": ":8",
+          "href": "https://web-class.netlify.app/object",
+          "text": "Object"
+        },
+        {
+          "id": ":9",
+          "href": "https://web-class.netlify.app/array",
+          "text": "Array"
+        },
+        {
+          "id": ":a",
+          "href": "https://web-class.netlify.app/functions",
+          "text": "Functions"
+        },
+        {
+          "id": ":b",
+          "href": "https://web-class.netlify.app/jsclasses",
+          "text": "JS Classes"
+        },
+        {
+          "id": ":c",
+          "href": "https://web-class.netlify.app/usingdomjs",
+          "text": "Using DOM JS"
+        },
+        {
+          "id": ":d",
+          "href": "https://web-class.netlify.app/accessdom",
+          "text": "Access DOM"
+        },
+        {
+          "id": ":d_1",
+          "href": "https://web-class.netlify.app/dom-1",
+          "text": "ACCESS DOM - Demo"
+        },
+        {
+          "id": ":f",
+          "href": "https://web-class.netlify.app/domcakeshideexample",
+          "text": "DOM CakesHide Example"
+        },
+        {
+          "id": ":g",
+          "href": "https://web-class.netlify.app/preventdomevent",
+          "text": "Prevent DOM Event"
+        },
+        {
+          "id": ":h",
+          "href": "https://web-class.netlify.app/changedomwithjs",
+          "text": "Change DOM using JS"
+        },
+        {
+          "id": ":i",
+          "href": "https://web-class.netlify.app/domevents",
+          "text": "DomEvents"
+        },
+        {
+          "id": ":j",
+          "href": "https://web-class.netlify.app/rest-httprequest",
+          "text": "REST-httpRequest"
+        },
+        {
+          "id": ":k",
+          "href": "https://web-class.netlify.app/prelearningjs",
+          "text": "Pre-Learning JS"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/react",
+      "text": "React",
+      "links": [
+        {
+          "id": ":l",
+          "href": "https://web-class.netlify.app/createreactapp",
+          "text": "createReactApp"
+        },
+        {
+          "id": ":m",
+          "href": "https://web-class.netlify.app/exportreactapp",
+          "text": "ExportReactapp"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/angular",
+      "text": "Angular",
+      "links": [
+        {
+          "id": ":n",
+          "href": "https://web-class.netlify.app/create-app-angular",
+          "text": "Create App - Angular"
+        },
+        {
+          "id": ":o",
+          "href": "https://web-class.netlify.app/angular-slides",
+          "text": "Angular-slides"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/nodejs",
+      "text": "Node.js",
+      "links": [
+        {
+          "id": ":p",
+          "href": "https://web-class.netlify.app/nodejsstart",
+          "text": "Node.js - start"
+        },
+        {
+          "id": ":q",
+          "href": "https://web-class.netlify.app/handlepost",
+          "text": "Handle POST"
+        },
+        {
+          "id": ":r",
+          "href": "https://web-class.netlify.app/solutionpostcurl",
+          "text": "Solution POST Curl"
+        },
+        {
+          "id": ":s",
+          "href": "https://web-class.netlify.app/hellowrld",
+          "text": "hello world - in 4 ways"
+        },
+        {
+          "id": ":t",
+          "href": "https://web-class.netlify.app/basic-static-server",
+          "text": "basic-static-server"
+        },
+        {
+          "id": ":u",
+          "href": "https://web-class.netlify.app/nodejs-quick-ref",
+          "text": "NodeJS Quick Reference"
+        },
+        {
+          "id": ":v",
+          "href": "https://web-class.netlify.app/aws-deploy-ec2",
+          "text": "AWS-Deploy-EC2"
+        },
+        {
+          "id": ":w",
+          "href": "https://web-class.netlify.app/basicrest",
+          "text": "Basic REST - 1"
+        },
+        {
+          "id": ":x",
+          "href": "https://web-class.netlify.app/basicrest---2",
+          "text": "BasicREST - 2"
+        },
+        {
+          "id": ":y",
+          "href": "https://web-class.netlify.app/basicrest---3",
+          "text": "BasicREST - 3"
+        },
+        {
+          "id": ":z",
+          "href": "https://web-class.netlify.app/basicrest---4",
+          "text": "BasicREST - 4"
+        },
+        {
+          "id": ":10",
+          "href": "https://web-class.netlify.app/basicrest-solutions",
+          "text": "BasicREST-solutions"
+        },
+        {
+          "id": ":11",
+          "href": "https://web-class.netlify.app/infosec",
+          "text": "InfoSec - part1"
+        },
+        {
+          "id": ":12",
+          "href": "https://web-class.netlify.app/infosec2",
+          "text": "infoSec - part2"
+        },
+        {
+          "id": ":13",
+          "href": "https://web-class.netlify.app/infosec-part3",
+          "text": "infoSec - part3"
+        },
+        {
+          "id": ":14",
+          "href": "https://web-class.netlify.app/infosec-part4",
+          "text": "infoSec - part4"
+        },
+        {
+          "id": ":15",
+          "href": "https://web-class.netlify.app/infosec-part5",
+          "text": "infoSec - part5"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/hw",
+      "text": "HW",
+      "links": [
+        {
+          "id": ":16",
+          "href": "https://web-class.netlify.app/hw-if-for",
+          "text": "HW-if-for"
+        },
+        {
+          "id": ":17",
+          "href": "https://web-class.netlify.app/hwfunction",
+          "text": "HWFunction"
+        },
+        {
+          "id": ":18",
+          "href": "https://web-class.netlify.app/hwarray",
+          "text": "HWArray"
+        },
+        {
+          "id": ":19",
+          "href": "https://web-class.netlify.app/select-city-array-exer",
+          "text": "select-city-array-exer"
+        },
+        {
+          "id": ":1a",
+          "href": "https://web-class.netlify.app/countries-json-dynamic-js-exer",
+          "text": "Countries JSON, dynamic JS, exer"
+        },
+        {
+          "id": ":1b",
+          "href": "https://web-class.netlify.app/infinitescroll",
+          "text": "Infinite Scroll Objects"
+        },
+        {
+          "id": ":1c",
+          "href": "https://web-class.netlify.app/conferenceexer",
+          "text": "Conference Website Exercise"
+        },
+        {
+          "id": ":1d",
+          "href": "https://web-class.netlify.app/classesexer",
+          "text": "ClassesExer"
+        },
+        {
+          "id": ":1e",
+          "href": "https://web-class.netlify.app/classcarexer",
+          "text": "Class Car Exercise"
+        },
+        {
+          "id": ":1f",
+          "href": "https://web-class.netlify.app/car-with-get-n-set-solution",
+          "text": "Car With Get Set - Solution"
+        },
+        {
+          "id": ":1g",
+          "href": "https://web-class.netlify.app/classesexerparkinglot",
+          "text": "Classes Exercise Parking Lot"
+        },
+        {
+          "id": ":1h",
+          "href": "https://web-class.netlify.app/classeshw-components",
+          "text": "ClassesHW-Components"
+        },
+        {
+          "id": ":1i",
+          "href": "https://web-class.netlify.app/inheritance-comprehensive",
+          "text": "inheritance-comprehensive"
+        },
+        {
+          "id": ":1j",
+          "href": "https://web-class.netlify.app/rentalcarsexer",
+          "text": "RentalCarsExer"
+        },
+        {
+          "id": ":1k",
+          "href": "https://web-class.netlify.app/infoaboutuser",
+          "text": "Info About the User"
+        },
+        {
+          "id": ":1l",
+          "href": "https://web-class.netlify.app/fullstackproject",
+          "text": "FullStackProject"
+        },
+        {
+          "id": ":1m",
+          "href": "https://web-class.netlify.app/reactexer1",
+          "text": "ReactExer1"
+        },
+        {
+          "id": ":1n",
+          "href": "https://web-class.netlify.app/angularexer",
+          "text": "Angular Exercises"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/extra-exer",
+      "text": "Extra Exer",
+      "links": [
+        {
+          "id": ":1o",
+          "href": "https://web-class.netlify.app/for-extra-exercise",
+          "text": "for Extra Exercise"
+        },
+        {
+          "id": ":1p",
+          "href": "https://web-class.netlify.app/if-extra-exercise",
+          "text": "if Extra Exercise"
+        },
+        {
+          "id": ":1q",
+          "href": "https://web-class.netlify.app/arraysextraexer",
+          "text": "Arrays Extra Exercise"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/db",
+      "text": "DB",
+      "links": [
+        {
+          "id": ":1r",
+          "href": "https://web-class.netlify.app/mysql-exercise1",
+          "text": "MySQL-Exercise1"
+        },
+        {
+          "id": ":1s",
+          "href": "https://web-class.netlify.app/mysql-exercise1-solved",
+          "text": "MySQL-exercise1-Solved"
+        },
+        {
+          "id": ":1t",
+          "href": "https://web-class.netlify.app/northwindsqlexer1",
+          "text": "NorthWind Exer 1"
+        },
+        {
+          "id": ":1u",
+          "href": "https://web-class.netlify.app/solutionsqlexer2",
+          "text": "Solution NorthWind Exer 1"
+        },
+        {
+          "id": ":1v",
+          "href": "https://web-class.netlify.app/northwindexer-2",
+          "text": "Northwind Exer 2"
+        },
+        {
+          "id": ":1w",
+          "href": "https://web-class.netlify.app/solutionnorthwindexer2",
+          "text": "Solution Northwind Exer2"
+        },
+        {
+          "id": ":1x",
+          "href": "https://web-class.netlify.app/normalization",
+          "text": "Normalization"
+        },
+        {
+          "id": ":1y",
+          "href": "https://web-class.netlify.app/sqlexer3",
+          "text": "Normalization Exer"
+        },
+        {
+          "id": ":1z",
+          "href": "https://web-class.netlify.app/constraints",
+          "text": "Constraints"
+        },
+        {
+          "id": ":20",
+          "href": "https://web-class.netlify.app/builddbproject",
+          "text": "DB Design Project"
+        },
+        {
+          "id": ":21",
+          "href": "https://web-class.netlify.app/storedprocedures",
+          "text": "Stored  Procedures"
+        },
+        {
+          "id": ":22",
+          "href": "https://web-class.netlify.app/advancedtsql",
+          "text": "AdvancedTSQL"
+        },
+        {
+          "id": ":23",
+          "href": "https://web-class.netlify.app/mysql-code",
+          "text": "mysql-code"
+        },
+        {
+          "id": ":24",
+          "href": "https://web-class.netlify.app/mysql-code-all",
+          "text": "mysql-code-all"
+        },
+        {
+          "id": ":25",
+          "href": "https://web-class.netlify.app/nodesqlserverinjection",
+          "text": "Node SQL Server - SQL Injection"
+        },
+        {
+          "id": ":26",
+          "href": "https://web-class.netlify.app/mongodb",
+          "text": "MongoDB"
+        },
+        {
+          "id": ":27",
+          "href": "https://web-class.netlify.app/mongodb_moreexamples",
+          "text": "MongoDB - Quick Reference"
+        },
+        {
+          "id": ":28",
+          "href": "https://web-class.netlify.app/mongoose-demo",
+          "text": "Mongoose Demo"
+        },
+        {
+          "id": ":29",
+          "href": "https://web-class.netlify.app/webapi-dot-net",
+          "text": "SQL Server + WebAPI  .NET"
+        },
+        {
+          "id": ":2a",
+          "href": "https://web-class.netlify.app/cors-dot-net",
+          "text": "CORS DOT NET"
+        }
+      ]
+    },
+    { "href": "./web.html", "text": "web" },
+
+    {
+      "href": "https://web-class.netlify.app/ci-cd",
+      "text": "CI/CD",
+      "links": [
+        {
+          "id": ":2b",
+          "href": "https://web-class.netlify.app/cypress-basics",
+          "text": "Cypress Basics"
+        },
+        {
+          "id": ":2c",
+          "href": "https://web-class.netlify.app/cypress-qa-git-jenkins-docker",
+          "text": "Cypress-QA-Git-Jenkins-Docker"
+        },
+        {
+          "id": ":2d",
+          "href": "https://web-class.netlify.app/cypress-with-typescript",
+          "text": "cypress-with-typescript"
+        },
+        {
+          "id": ":2e",
+          "href": "https://web-class.netlify.app/hw-yahoo-sport",
+          "text": "HW-Yahoo-Sport-Page"
+        },
+        {
+          "id": ":2f",
+          "href": "https://web-class.netlify.app/cypress-intercept",
+          "text": "Cypress Intercept"
+        },
+        {
+          "id": ":2g",
+          "href": "https://web-class.netlify.app/cypress-with-excel",
+          "text": "Cypress with Excel"
+        },
+        {
+          "id": ":2h",
+          "href": "https://web-class.netlify.app/cypress-compare-list-with-fixture",
+          "text": "Cypress compare list with fixture"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/php",
+      "text": "PHP",
+      "links": [
+        {
+          "id": ":2i",
+          "href": "https://web-class.netlify.app/xampp-installation",
+          "text": "XAMPP-installation"
+        },
+        {
+          "id": ":2j",
+          "href": "https://web-class.netlify.app/phpinheritance",
+          "text": "PHP inheritance"
+        },
+        {
+          "id": ":2k",
+          "href": "https://web-class.netlify.app/php-inheritanceexer",
+          "text": "PHP-InheritanceExer"
+        },
+        {
+          "id": ":2l",
+          "href": "https://web-class.netlify.app/db-mysql",
+          "text": "DB-MySQL"
+        },
+        {
+          "id": ":2m",
+          "href": "https://web-class.netlify.app/sql-practice-queries",
+          "text": "SQL-practice-queries"
+        }
+      ]
+    },
+    {
+      "href": "https://web-class.netlify.app/py",
+      "text": "python",
+      "links": [
+        {
+          "id": ":2n",
+          "href": "https://web-class.netlify.app/python-basic",
+          "text": "python-basic"
+        }
+      ]
+    }
+  ]
+}
