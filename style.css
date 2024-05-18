@@ -203,15 +203,21 @@ section {
   line-height: 150%;
   text-align: start;
 }
+/* section * {
+  border: 1px dashed blue;
+} */
 section p {
   margin-top: 1rem;
 }
 section ul {
   list-style-type: none;
-  padding-inline-start: 2rem;
+  padding-inline-start: 1.5rem;
+}
+section ol {
+  padding-inline-start: 1.5rem;
 }
 section ul.list li:before {
-  content: "\2014";
+  content: " - ";
 }
 section img {
   direction: ltr;

@@ -13,7 +13,7 @@
     </header>
     <main> 
         <h3 id="this-page-url"></h3>
-        <h1>HTML</h1>
+        <h1>HTML Forms</h1>
         <section class="heb">
             <h2>תרגיל:</h2>
             <p>בנו טופס כזה, לפי ההוראות שבהמשך:</p>
@@ -28,11 +28,12 @@
                         <li>תיבת טקסט שם משתמש - text   , והוסיפו את התכונה placeholder עם הערך כמו בתמונה</li>
                         <li>תיבת טקסט סיסמה  - password</li>
                         <li>תיבת טקסט וידוא סיסמה  - password</li>
+                        <br>
                     <li>
-                    <p>בחירה חודש - select (עם 12 options, שהן: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+                    בחירה חודש - select (עם 12 options, שהן: Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
                         <br/>
                         (כלומר, זהו אלמנט בחירה רגיל שתיצרו בעצמכם, ולא מסוג month).</p>
-                    </li>
+                    
                     <div class="challenge"><p >
                         תוספת תרגיל רשות אתגר:
 <br>
@@ -42,24 +43,52 @@
 <br>
 קוד עזר (נניח שלאלמנט של בחירת השנה נתנו את הid הזה: mySelectYear, אז נשתמש בקוד הבא בתג הselect של בחירת החודש) :
 </p>
-<section class="eng" dir="ltr"><p>
+<div class="eng" dir="ltr">
     &lt;select onchange="document.querySelector('#mySelectYear').disabled = false;"&gt;
-    </p></section>
+    </div>
 
 </div> 
-<p>עבור שנה (וגם עבור יום באופן דומה) השתמשו בקוד הבא:</p>
-<section class="eng" dir="ltr"><p>
+</li>
+<br>
+<li>
+עבור שנה (וגם עבור יום באופן דומה) השתמשו בקוד הבא:
+<div class="eng" dir="ltr">
     &lt;input type="number" min="1923" max="2023" step="1" value="2003" /&gt;
-    </p></section>
-<p>(זו לא הדרך האידיאלית, אבל לתרגיל הזה נסתפק באופן הזה)</p>
-<p>בחירת מין - select.</p>
+   </div>
+(זו לא הדרך האידיאלית, אבל לתרגיל הזה נסתפק באופן הזה)</li>
+<br>
+<li>בחירת מין - select.</li>
+<br>
+<li>תיבת טקסט טלפון - tel, יש לוודא פורמט של טלפון אמריקאי (כלומר מבנה המספר: XXX-XXX-XXXX), היעזרו בקוד הבא:
+    <div  class="eng" dir="ltr">&lt;input id="telId" name="telNo" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"&gt;</div></li>
                     </ul>
                 </li>
-                <li><p>עבור שנה (וגם עבור יום באופן דומה) השתמשו בקוד הבא:</p></li>
-                <li></li>
+                <li>
+                    <p>השתמשו בסלקטור ה css לצביעת הרקע של שדות לא תקינים:
+                        <br>
+                        היעזרו ברשימת הגדרת הסלקטורים שכאן כדי למצא מהו הסלקטור שעליכם להשתמש בו 
+                        <br>
+                        זהו הסלקטור שבוחר את ״כל האלמנטים אשר מצויים במצב ספציפי״, כאשר כאן אצלנו שם המצב הינו "invalid".
+                        <br>
+                        (תוכלו לבדוק את תשובתכם <a href="https://web-class.netlify.app/htmlformssolution">כאן</a>)
+                    </p>
+                </li>
+                <li>
+                    <p>הוסיפו כפתור שליחה:
+                        <div class="eng" dir="ltr">&lt;input type="submit" value="Submit"&gt;</div>
+                    </p>
+                </li>
             </ol>
         </section>
         
+        <hr>
+        <section class="heb">
+            <p>
+                פתרון אפשר להוריד מ<a href="https://drive.google.com/uc?export=download&id=1XlMispisR3PZBm9kjPhoPPlUDuvbFx9G">כאן</a>.<br>
+                פתרון 1 של מרסלו אפשר להוריד מ<a href="https://drive.google.com/uc?export=download&id=1jYM7TBOOn0I_0Y-0bIsaN02yi01tJ5XB">כאן</a>.<br>
+                פתרון 2 של מרסלו (עם תוספת בדיקה שהסיסמאות שהוקלדו זהות) אפשר להוריד מ<a href="https://drive.google.com/uc?export=download&id=19IQS7qOyKTyeapvXuwrD_Oup0OWSFiVr">כאן</a>.<br>
+            </p>
+        </section>
         <hr>
     </main>
     <script src="index.js"></script>
