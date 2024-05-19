@@ -224,16 +224,31 @@ section ul {
 section ol {
   padding-inline-start: 1.5rem;
 }
+section ol.question {
+  counter-reset: foo;
+  padding-inline-start: 0rem;
+}
+section ol.question li {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+section ol.question li:before {
+  content: " שאלה ";
+  counter-increment: foo;
+  content: "שאלה " counter(foo) ":  ";
+  padding-right: -2rem;
+}
 section ul.list li:before {
   content: " - ";
 }
 section img {
   direction: ltr;
 }
-section img.img_w600 {
-  max-width: 560px;
+section .max_width_600 {
+  max-width: 600px;
   width: 100%;
 }
+
 section code {
   background-color: var(--code-background-color);
   padding: 20px;
