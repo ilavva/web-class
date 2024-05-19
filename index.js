@@ -9,19 +9,13 @@ function load_json(list_url, callback) {
         .then((text) => callback(text));
 }
 
-function create_html(json, role) {
+function create_navbar_html(json, role) {
     let html = "";
-    if (role == "navbar") {
-        html += `<nav  role="navigation" class="sites-header-nav-container">
-    <ul class="sites-header-nav">`;
-    }
-    else {
-        html += ` <ul class="links">`;
-    }
-    for (const li of json["web"]) {
+
+    for (const li of json) {
         html += `<li>`;
-        html += `<a href="${li["href"]}">${li["text"]}</a>`;
-        if (li["links"]) {
+
+        if (li["question"]) {
             if (role == "navbar") {
                 html += `<ul class="dropdown">`;
             } else {
@@ -36,11 +30,13 @@ function create_html(json, role) {
         }
         html += `</li>`;
     }
-    html += ` </ul>`;
-    if (role == "navbar") {
-        html += `    </nav >`;
-    }
+
+
     return html;
+}
+
+function create_questions_html(json, includeSolutions) {
+
 }
 
 function load_included_html() {
@@ -71,7 +67,20 @@ function load_included_html() {
             const nav_links_json = "./nav_links.json";
             const role = listNavBars[index].getAttribute("role");
             load_json(nav_links_json, (json) => {
-                listNavBars[index].innerHTML = create_html(json, role);
+                listNavBars[index].innerHTML = create_navbar_html(json, role);
+            });
+        }
+    }
+
+    const listLoadData = document.querySelectorAll(".load_data");
+    if (listLoadData.length > 0) {
+        for (let index = 0; index < listLoadData.length; index++) {
+            const elemLoadData = listLoadData[index];
+            //<ol class="question load_data" data-src="northwindsqlexer1.json" show-solutions="no">
+            const data_src_filename = elemLoadData.getAttribute("data-src");
+            const includeSolutions = (elemLoadData.getAttribute("show-solutions") === "yes");
+            load_json(data_src_filename, (json) => {
+                elemLoadData.innerHTML = create_questions_html(json, includeSolutions);
             });
         }
     }

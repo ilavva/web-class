@@ -1,0 +1,12 @@
+{
+    [
+        {"question":"כתבו שאילתה להצגת כל הלקוחות.<br> הציגו לכל לקוח את כל העמודות.",
+        "solution_code": " <font color=\"green\">-- Answer 1</font>
+        <br>
+        <font color=\"blue\">SELECT</font> * <font color=\"blue\">FROM</font> customers;
+"
+        },
+        {"text": "שאלות שדרוש Join לפתרון שלהן:"},
+
+    ]
+}
