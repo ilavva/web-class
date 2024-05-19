@@ -39,11 +39,11 @@
     },
     {
       "question": "כתבו שאילתה להצגת דוח שבו יופיעו כל הלקוחות מהערים Seattle, New York, Los Angeles , <br>     ולכל לקוח את שמו, שם ה employee שמטפל בו,<br>     אבל רק ללקוחות שה  employee  שמטפל ב הם באותה עיר כמוהם.",
-      "solution_code": ""
+      "solution_code": "<font color=\"green\">--  Answer 10</font><br><font color=\"blue\">SELECT </font>  (customers.first_name + <font color=\"firebrick\">' '</font> + customers.last_name) <font color=\"blue\">AS</font> <font color=\"firebrick\">'Customer Name'</font>,<br> (employees.first_name + <font color=\"firebrick\">' '</font> + employees.last_name) <font color=\"blue\"> AS </font><font color=\"firebrick\">'Employee Name'</font><br> <font color=\"green\">--,customers.city, employees.city</font><br> <font color=\"blue\">FROM</font> customers <font color=\"blue\">JOIN</font> orders <br>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color=\"blue\">ON</font> customers.id = orders.customer_id <br> <font color=\"blue\"> &nbsp; &nbsp; &nbsp; &nbsp;JOIN </font> employees <br> <font color=\"blue\">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ON </font> orders.employee_id = employees.id <br> <font color=\"blue\"> WHERE </font> employees.city <font color=\"blue\"> IN </font> (<font color=\"firebrick\">'New York'</font>, <font color=\"firebrick\">'Seattle'</font>,<font color=\"firebrick\">'Los Angeles'</font>) <br> &nbsp;&nbsp;&nbsp;<font color=\"blue\"> AND </font> (employees.city = customers.city); "
     },
     {
       "question": "    כתבו שאילתה שתציג דוח על כל הלקוחות, <br>ובו הסכום סך הכל של כל ההזמנות שהזמין אי פעם (sum).<br>הציגו לכל לקוח את מספר הלקוח,<br>שמו עם כותרת Name,<br>סך סכום ההזמנות עם הכותרת ״total orders amount״. ",
-      "solution_code": ""
+      "solution_code": "<font color=\"green\">--  Answer 11</font><br><font color=\"blue\">SELECT</font> customers.id,<br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(customers.first_name +  <font color=\"firebrick\">' '</font> + customers.last_name) <font color=\"blue\">AS</font> Name, <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color=\"darkkhaki\">SUM</font>(invoices.amount_due)<font color=\"blue\"> AS</font> <font color=\"firebrick\">'total orders amount' </font><br> <font color=\"blue\">FROM</font> orders <font color=\"blue\">JOIN</font> invoices <br>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<font color=\"blue\">ON</font> orders.id = invoices.order_id <br>  &nbsp; &nbsp; &nbsp; &nbsp;<font color=\"blue\">JOIN</font> customers <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <font color=\"blue\">ON</font> orders.customer_id  = customers.id <br> <font color=\"blue\">GROUP BY</font> customers.id, customers.first_name, customers.last_name;"
     }
   ]
 }

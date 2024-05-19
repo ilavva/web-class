@@ -255,6 +255,11 @@ section .max_width_600 {
   width: 100%;
 }
 
+section .max_width_700 {
+  max-width: 700px;
+  width: 100%;
+}
+
 section code {
   background-color: var(--code-background-color);
   padding: 20px;

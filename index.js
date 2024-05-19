@@ -56,7 +56,7 @@ function create_questions_html(json, includeSolutions) {
         if (li["question"]) {
             html += `<br> ${li["question"]} `;
             if (includeSolutions && li["solution_code"]) {
-                html += `<code class="max_width_600"> ${li["solution_code"]} </code>`;
+                html += `<code class="max_width_700"> ${li["solution_code"]} </code>`;
             }
         }
 
