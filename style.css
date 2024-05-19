@@ -42,27 +42,29 @@ body {
 
 header {
   background-color: var(--bg-nav-color);
-
-  height: 9rem;
+  height: 8rem;
   border-left: 2px solid var(--hr-color);
   border-right: 2px solid var(--hr-color);
   border-bottom: 1rem solid var(--menu-border-color);
 }
-@media screen and (max-width: 1310px) {
+@media screen and (max-width: 940px) {
+  header {
+    height: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
   header {
     height: 12.5rem;
   }
 }
-@media screen and (max-width: 750px) {
+
+@media screen and (max-width: 300px) {
   header {
-    height: 16rem;
+    height: 16.5rem;
   }
 }
-@media screen and (max-width: 550px) {
-  header {
-    height: 19.5rem;
-  }
-}
+
 header h1 {
   padding-top: 2rem;
   padding-left: 2rem;
@@ -89,14 +91,18 @@ a {
 #navbar {
   display: block;
 }
+
 nav.sites-header-nav-container {
   height: max-content;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 nav {
   font-family: monospace;
-  margin-right: 6rem;
+  margin-right: 4rem;
+}
+nav * {
+  font-size: small;
 }
 nav .sites-header-nav a:hover {
   color: var(--menu-font-color-active);
@@ -113,15 +119,15 @@ nav .sites-header-nav ul {
   padding: 0;
 }
 nav .sites-header-nav > li {
-  margin: 0.5rem;
-  border-radius: 0.5rem;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
 }
 nav li {
   color: var(--menu-font-color);
   background: var(--menu-bg-color);
   display: block;
   float: left;
-  padding: 0.7rem;
+  padding: 0.5rem;
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
@@ -152,7 +158,6 @@ nav ul li ul {
   transition: all 0.5s ease;
   margin-top: 1rem;
   left: 0;
-  border-radius: 5px;
   display: none;
 }
 
@@ -167,7 +172,6 @@ nav ul li ul:focus {
   color: var(--menu-font-color-active);
   z-index: 2;
   margin-top: 0.5rem;
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -181,7 +185,10 @@ main {
   padding: 20px;
   border: 2px solid var(--hr-color);
 }
-
+section {
+  line-height: 150%;
+  text-align: start;
+}
 h3 {
   font-weight: 600;
   font-size: larger;
@@ -201,11 +208,9 @@ h1 {
   text-align: center;
   color: var(--h1-header-color);
   text-decoration: underline;
+  line-height: 2.5rem;
 }
-section {
-  line-height: 150%;
-  text-align: start;
-}
+
 /* section * {
   border: 1px dashed blue;
 } */
@@ -224,6 +229,10 @@ section ul.list li:before {
 }
 section img {
   direction: ltr;
+}
+section img.img_w600 {
+  max-width: 560px;
+  width: 100%;
 }
 section code {
   background-color: var(--code-background-color);
