@@ -1,12 +1,20 @@
 {
     [
-        {"question":"כתבו שאילתה להצגת כל הלקוחות.<br> הציגו לכל לקוח את כל העמודות.",
-        "solution_code": " <font color=\"green\">-- Answer 1</font>
-        <br>
-        <font color=\"blue\">SELECT</font> * <font color=\"blue\">FROM</font> customers;
-"
+        {
+            "question":"כתבו שאילתה להצגת כל הלקוחות.<br> הציגו לכל לקוח את כל העמודות.",
+            "solution_code": " <font color=\"green\">-- Answer 1</font><br><font color=\"blue\">SELECT</font> * <font color=\"blue\">FROM</font> customers;"
         },
-        {"text": "שאלות שדרוש Join לפתרון שלהן:"},
+        {
+            "question":"כתבו שאילתה להצגת כל הלקוחות,<br>
+            לכל לקוח הציגו:<br>
+            חברה, שם משפחה, שם פרטי, אימייל, תפקיד, טלפון נייד.",
+            "solution_code": " <font color=\"green\">-- Answer 2</font>
+            <br>
+            <font color=\"blue\">SELECT</font>  [company], [last_name], [first_name], [email_address], [job_title], [mobile_phone] 
+            <br><font color=\"blue\">FROM</font> customers;
+        "
+        },
+        {"text": "שאלות שדרוש Join לפתרון שלהן:"}
 
     ]
 }
