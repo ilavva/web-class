@@ -10,7 +10,7 @@
     },
     {
       "question": "כתבו שאילתה להצגת כל ההזמנות.<br> הציגו לכל הזמנה את  תאריך ההזמנה,<br>  מספר העובד,<br>  מספר הלקוח,<br>  סטטוס ההזמנה (status_id).<br>    הציגו בסדר עולה לפי התאריך .",
-      "solution_code": "<font color=\"green\">-- Answer 3</font><br><font color=\"blue\">SELECT </font>[order_date], [employee_id], [customer_id], [status_id] <br> <font color=\"blue\">FROM </font> orders <font color=\"blue\">ORDER BY</font> [order_date];"
+      "solution_code": "<font color=\"green\">-- Answer 3</font><br><font color=\"blue\">SELECT </font>[order_date], [employee_id], [customer_id], [status_id] <br> <font color=\"blue\">FROM </font> orders <font color=\"blue\"><br>ORDER BY</font> [order_date];"
     },
     {
       "question": "תבו שאילתה להצגת כל החשבוניות (Invoices).<br> הציגו לכל חשבונית את מספר ההזמנה,<br> עלות המשלוח + המחיר (סכום סה״כ יחד) עם כותרת Total with shipping. <br>  הציגו בסדר עולה לפי מספר הזמנה .<br> <br> בנוסף, שנו את השאילתה כך שתציג רק את אלה שהסכום סה״כ Total with shipping מעל 30. ",
@@ -26,7 +26,7 @@
     },
     {
       "text": "שאלות שדרוש Join לפתרון שלהן:",
-      "question": "כתבו שאילתה להצגת כל הלקוחות שאינם מארה״ב.<br>   הציגו שם פרטי + משפחה עם כותרת Name,<br>  מדינה.",
+      "question": "כתבו שאילתה להצגת כל ההזמנות.<br>  הציגו לכל הזמנה את  תאריך ההזמנה,<br> מספר העובד,<br> מספר הלקוח,<br> סטטוס ההזמנה כ status_id.<br>  סטטוס ההזמנה כ status_name.<br>הציגו בסדר עולה לפי התאריך .",
       "solution_code": "<font color=\"green\"> -- Answer 7 <br> --SELECT  orders.employee_id, ord.customer_id, <br>  -- ord.status_id, status_name</font> <br> <font color=\"blue\">SELECT</font> ord.employee_id, ord.customer_id, ord.status_id, status_name <br> <font color=\"blue\">FROM</font> orders <font color=\"blue\">AS</font> ord <br><font color=\"blue\">&nbsp;&nbsp;&nbsp;&nbsp;JOIN</font><br>  orders_status <font color=\"blue\">AS </font> o_status<br> <font color=\"blue\">ON</font> status_id =o_status.id;"
     },
     {
@@ -35,7 +35,7 @@
     },
     {
       "question": "כתבו שאילתה להצגת דוח אודות ההזמנות שלקוחות עשו,  <br>    קבצו לפי id של לקוח והציגו את ה id של הלקוח, שם פרטי, שם משפחה, וממוצע סכום ההזמנות שביצע. <br>    אבל רק ללקוחות שממוצע סכום ההזמנות שביצע מעל 5000 .",
-      "solution_code": ""
+      "solution_code": "<font color=\"green\"> -- Answer 9</font><br><font color=\"blue\">SELECT</font> orders.customer_id, customers.first_name, customers.last_name,<font color=\"darkkhaki\">AVG</font>(invoices.amount_due)</br>  <font color=\"blue\">FROM </font>orders <br> &nbsp; &nbsp;<font color=\"blue\">JOIN</font><br> &nbsp; &nbsp; &nbsp; &nbsp;customers <br> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<font color=\"blue\">ON </font> orders.customer_id = customers.id <br> &nbsp; &nbsp;<font color=\"blue\">JOIN </font><br>&nbsp; &nbsp; &nbsp; &nbsp;invoices <br> &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<font color=\"blue\">ON </font> orders.id =  invoices.order_id<br> <font color=\"blue\"> GROUP BY </font>   orders.customer_id, customers.first_name,  customers.last_name <br> <font color=\"blue\">HAVING</font> <font color=\"darkkhaki\">AVG</font>(invoices.amount_due)> 5000;"
     },
     {
       "question": "כתבו שאילתה להצגת דוח שבו יופיעו כל הלקוחות מהערים Seattle, New York, Los Angeles , <br>     ולכל לקוח את שמו, שם ה employee שמטפל בו,<br>     אבל רק ללקוחות שה  employee  שמטפל ב הם באותה עיר כמוהם.",
