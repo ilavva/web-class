@@ -26,7 +26,7 @@
   --menu-font-color-visited: rgb(2, 157, 5);
 
   --h1-header-color: rgb(153, 0, 0);
-
+  --h-color-questions: firebrick;
   --code-background-color: white;
   --code-border-color: rgb(98, 98, 90);
 
@@ -34,6 +34,7 @@
   --table-header-bg-color: #f99304;
   --table-header-font-color: white;
   --table-bg-color-active: rgb(255, 253, 244);
+  --code-font-color: rgb(95, 94, 94);
 }
 body {
   background-color: var(--bg-body-color);
@@ -214,6 +215,11 @@ h1 {
 /* section * {
   border: 1px dashed blue;
 } */
+.questions h1,
+.questions h2,
+.questions h3 {
+  color: var(--h-color-questions);
+}
 section p {
   margin-top: 1rem;
 }
@@ -257,10 +263,11 @@ section code {
   text-align: left;
   direction: ltr;
   border: 1px solid var(--code-border-color);
+  color: var(--code-font-color);
 }
-section code * {
+/* section code * {
   font-weight: bolder;
-}
+} */
 .eng {
   direction: ltr;
   /* unicode-bidi: embed; */

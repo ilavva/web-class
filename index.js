@@ -11,11 +11,17 @@ function load_json(list_url, callback) {
 
 function create_navbar_html(json, role) {
     let html = "";
-
-    for (const li of json) {
+    if (role == "navbar") {
+        html += `<nav  role="navigation" class="sites-header-nav-container">
+    <ul class="sites-header-nav">`;
+    }
+    else {
+        html += ` <ul class="links">`;
+    }
+    for (const li of json["web"]) {
         html += `<li>`;
-
-        if (li["question"]) {
+        html += `<a href="${li["href"]}">${li["text"]}</a>`;
+        if (li["links"]) {
             if (role == "navbar") {
                 html += `<ul class="dropdown">`;
             } else {
@@ -30,13 +36,35 @@ function create_navbar_html(json, role) {
         }
         html += `</li>`;
     }
-
-
+    html += ` </ul>`;
+    if (role == "navbar") {
+        html += `    </nav >`;
+    }
     return html;
 }
 
 function create_questions_html(json, includeSolutions) {
+    let html = "";
 
+    for (const li of json["questions"]) {
+        if (li["text"]) {
+            html += `<hr><br> <h3> ${li["text"]} </h3>`;
+
+        }
+        html += `<li>`;
+
+        if (li["question"]) {
+            html += `<br> ${li["question"]} `;
+            if (includeSolutions && li["solution_code"]) {
+                html += `<code class="max_width_600"> ${li["solution_code"]} </code>`;
+            }
+        }
+
+        html += `</li>`;
+    }
+
+
+    return html;
 }
 
 function load_included_html() {
